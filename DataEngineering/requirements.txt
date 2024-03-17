@@ -1,0 +1,6 @@
+polars==0.20
+requests
+pandas==2.2.1
+polars[sqlalchemy]
+mysql-connector-python
+pyarrow==15.0.1
