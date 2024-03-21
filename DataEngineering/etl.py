@@ -67,7 +67,7 @@ def transform_data(counts_raw):
     logging.info("Done : name lowering.")
     
     # Keep some clumns
-    out  = counts_raw.select(pl.col("year", "month", "day", "counts", "name_lower"))
+    out  = counts_raw.select(pl.col("date", "year", "month", "day", "counts", "name_lower"))
     logging.info("Done : columns filtering.")
     
     return out
