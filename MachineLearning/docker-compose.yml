@@ -5,5 +5,5 @@ services:
     ports:
       - 8889:8888
     volumes:
-      - /jupyter-data:/home/jovyan/work
+      - ./notebooks:/home/jovyan/work
     command: start-notebook.py --NotebookApp.token='my-token'
