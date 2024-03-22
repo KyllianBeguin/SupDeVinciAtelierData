@@ -51,12 +51,13 @@ def transform_data(counts_raw):
     
     # Unpack Date
     counts_raw = counts_raw.with_columns(
-        pl.col("date").str.to_datetime().cast(pl.Date)
+        pl.col("date").str.to_datetime().alias("datetime")
     )
     counts_raw = counts_raw.with_columns([
-        pl.col("date").dt.year().alias("year"),
-        pl.col("date").dt.month().alias("month"),
-        pl.col("date").dt.day().alias("day")
+        pl.col("datetime").dt.year().alias("year"),
+        pl.col("datetime").dt.month().alias("month"),
+        pl.col("datetime").dt.day().alias("day"),
+        pl.col("datetime").dt.hour().alias("hour")
     ])
     logging.info("Done : Date unpacking.")
     
@@ -67,7 +68,7 @@ def transform_data(counts_raw):
     logging.info("Done : name lowering.")
     
     # Keep some clumns
-    out  = counts_raw.select(pl.col("date", "year", "month", "day", "counts", "name_lower"))
+    out  = counts_raw.select(pl.col("datetime", "year", "month", "day", "hour", "counts", "name_lower"))
     logging.info("Done : columns filtering.")
     
     return out
