@@ -2,14 +2,15 @@
 ## Initalisation
 1. Avoir réalisé l'étape de mise en place
     * [DOC - mise en place de l'atelier](https://github.com/KyllianBeguin/SupDeVinciAtelierData?tab=readme-ov-file#mise-en-place)
-3. Connecter les pc étudiants à l'instance Apache Superset
+2. Créer des utilisateurs sur l'instance Apache Superset
     * Adresse `<IP-de-ma-VM>:8088`
     * Utilisateur : `admin`
     * MotDePasse : `admin`
+3. Connecter les pc étudiants à l'instance Apache Superset
 
 ## Feuille de route
 1. Placer les étudiants sur les pc
-2. Présenter les objectifs
+2. Présenter l'objectif : **Comprendre les données de comptages de vélo et piétons à Rennes**
 3. Montrer comment faire un graphique type
 4. Faire créer des graphiques ("Charts") par les étudiants
    * 3 graphiques à réaliser :
