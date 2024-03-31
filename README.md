@@ -31,28 +31,24 @@
     - L'hôte est : `127.0.0.1`
     - La base est : `atelierdata`
     - Le nom d'utilisateur est : `root`
-15. Initiez un dashboard et le sauvegarder
-    - Il s'agit d'une coquille vide qui sera à alimenter par les étudiants.
+15. Initiez des dashboards et les sauvegarder
+    - Il s'agit de coquilles vides qui seront à alimenter par les étudiants.
 16. Allez dans le dossier `/MachineLearning`
 17. Lancez la commande `docker compose up --build -d`
-18. Allez sur la page web `<IP-de-ma-VM>:8888` et connectez-vous
-    - le token à entrer est : `my-token`
-19. Dans cette application web, allez dans le dossier `/work`
-20. Ouvrez le fichier `labML.ipynb`
-21. Assurez-vous que l'ip de hôte de la base est bien celle de votre VM
+18. Assurez-vous que l'ip de hôte de la base est bien celle de votre VM
     - Pour connaître l'ip de votre VM, tapez : `ip a`. Cela devrait vous proposer des ip, à tester.
     - Pour tester la connexion, lancez les cellules de code.
-22. **Félicitation, votre atelier Data peut commencer !**
+19. **Félicitation, votre atelier Data peut commencer !**
 
 ## Ateliers
 ### Atelier Bachelor
-Objectif : Exposer des données visuellement, selon un cahier des charges  
+Objectif : **Comprendre les données de comptages de vélo et piétons à Rennes**  
 Durée : 5 à 10 min  
 Déroulé de l'atelier : cf [la feuille de route Bachelor](./FeuilleDeRouteBachelor.md)
 
 ### Atelier Mastère
 Objectifs :  
-1. Traiter la data selon un cahier des charge Machine Learning  
+1. **Rétablir un flux de traitement de données**  
 2. Prédire des données  
 3. Visualiser les données prédites  
 
