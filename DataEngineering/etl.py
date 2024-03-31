@@ -20,14 +20,10 @@ def download_data(raw_file="RawData.csv"):
         "use_labels=true&delimiter=%3B"
     )
     logging.info("Running downloading !")
-    if not os.path.exists("./" + raw_file):
-        logging.warning("No raw file in the current. Downloading it...")
-        r = requests.get(url)
-        with open(raw_file, 'wb') as f:
-            f.write(r.content)
-        logging.info("Complete ! Raw File located here: ./RawData.csv")
-        return None
-    logging.info(f"File already in folder ! See ./{raw_file}")
+    r = requests.get(url)
+    with open(raw_file, 'wb') as f:
+        f.write(r.content)
+    logging.info("Complete ! Raw File located here: ./RawData.csv")
     return None
 
 def read_data(raw_file="RawData.csv"):
@@ -38,6 +34,7 @@ def read_data(raw_file="RawData.csv"):
         separator=";",
         truncate_ragged_lines=True
     )
+    os.remove(f"./{raw_file}")
     return counts
     
 def transform_data(counts_raw):
