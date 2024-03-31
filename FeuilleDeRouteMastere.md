@@ -1,4 +1,4 @@
-# Feuille de route Bachelor
+# Feuille de route Mastère
 ## Initalisation
 1. Avoir réalisé l'étape de mise en place
     * [DOC - mise en place de l'atelier](https://github.com/KyllianBeguin/SupDeVinciAtelierData?tab=readme-ov-file#mise-en-place)
