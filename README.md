@@ -1,4 +1,6 @@
 # Atelier Data du 27/03/2024
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Static Badge](https://img.shields.io/badge/Apache%20Superset-green?style=for-the-badge)
+
 ## Sommaire
 1. [Infrastructure](#infrastructure)
     1. [Mise en place](#mise-en-place)
