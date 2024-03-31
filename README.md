@@ -1,7 +1,7 @@
 # Atelier Data du 27/03/2024
 ## Sommaire
 1. [Infrastructure](#infrastructure)
-    1. [Mise en place](mise-en-place)
+    1. [Mise en place](#mise-en-place)
 2. [Ateliers](#atelier)
     1. [Bachelor](#atelier-bachelor)
     2. [Mastère](#atelier-mastère)
