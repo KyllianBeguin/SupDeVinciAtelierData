@@ -2,7 +2,7 @@
 ## Sommaire
 1. [Infrastructure](#infrastructure)
     1. [Mise en place](#mise-en-place)
-2. [Ateliers](#atelier)
+2. [Ateliers](#ateliers)
     1. [Bachelor](#atelier-bachelor)
     2. [Mastère](#atelier-mastère)
 3. [Autre](#autre)
