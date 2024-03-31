@@ -16,7 +16,7 @@
 ## Feuille de route
 ### Partie Data Engineering
 1. Placer les étudiants sur le PC n°1
-2. Présenter l'objectif suivant : **Rétablir un flux de traitement de données**
+2. Présenter l'objectif : **Rétablir un flux de traitement de données**
     * 💡 Conseil : avec `adminer`, montrer les données actuellement en base
 3. Montrer la partie de code a traiter
     * 🚨 Attention : assurez-vous que les étudiants connaissent à minima la bibliothèque Python [pandas](https://pandas.pydata.org/), voire celle utilisé [polars](https://pola.rs/)
