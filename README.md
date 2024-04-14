@@ -39,13 +39,11 @@
     - L'hôte est : `127.0.0.1`
     - La base est : `atelierdata`
     - Le nom d'utilisateur est : `root`
-15. Initier des dashboards et les sauvegarder
-    - Il s'agit de coquilles vides qui seront à alimenter par les étudiants.
-16. Aller dans le dossier `/MachineLearning`
-17. Lancer la commande `docker compose up --build -d`
-18. S'assurer que l'ip de hôte de la base est bien celle de votre VM
+15. Aller dans le dossier `/MachineLearning`
+16. Lancer la commande `docker compose up --build -d`
+17. S'assurer que l'ip de hôte de la base est bien celle de votre VM
     - Pour connaître l'ip de votre VM, tapez : `ip a`. Cela devrait vous proposer des ip, à tester.
-19. **Félicitation, votre atelier Data peut commencer !**
+18. **Félicitation, votre atelier Data peut commencer !**
 
 ## Ateliers
 ### Atelier Bachelor
