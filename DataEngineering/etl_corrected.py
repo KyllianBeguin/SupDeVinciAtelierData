@@ -50,15 +50,13 @@ def transform_data(counts_raw):
     cast_date = counts_raw.with_columns(
         pl.col("date").str.to_datetime().alias("datetime")
     )
-    unpack_date = counts_raw.with_columns([
+    unpack_date = cast_date.with_columns([
         pl.col("datetime").dt.year().alias("year"),
         pl.col("datetime").dt.month().alias("month"),
         pl.col("datetime").dt.day().alias("day"),
-        # TODO : Extraire l'heure
-        # doc : https://docs.pola.rs/py-polars/html/reference/expressions/api/polars.Expr.dt.hour.html
-        pl.col("datetime")
+        pl.col("datetime").dt.hour().alias("hour")
     ])
-    logging.info("Done : Date unpacking.")
+    logging.info("Done: Date unpacking.")
     
     # Lower "name" column
     lower_name = unpack_date.with_columns(
@@ -69,12 +67,10 @@ def transform_data(counts_raw):
     # Keep some clumns
     filtered  = lower_name.select(pl.col("datetime", "year", "month", "day", "hour", "counts", "name_lower"))
     logging.info("Done: columns filtering.")
-
-    # TODO Supprimer les Nan
-    # doc : https://docs.pola.rs/py-polars/html/reference/expressions/api/polars.Expr.drop_nans.html#polars.Expr.drop_nans
-    drop_nan = filtered.select()
-    logging.info("Done: nans dropping")
     
+    drop_nan = filtered.select(pl.col("counts").drop_nans())
+    logging.info("Done: nans dropping")
+
     return drop_nan
     
 def load_data(counts_clean):
